@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>- Ahorcado -</h1>
+  <div class = "table" id = "table">
+
+  </div>
+  <div class="palabra" id="palabra">
+        <p>Intentos Restantes: <span id="attempts">4</span></p>
+        <input type="text" id="guess" class="campo-texto" placeholder="Ingrese su texto aquí">
+        <div id="container">
+            <div class="recuadros">
+                <div class="letra" id="letra1"></div>
+                <div class="letra" id="letra2"></div>
+                <div class="letra" id="letra3"></div>
+                <div class="letra" id="letra4"></div>
+                <div class="letra" id="letra5"></div>
+          </div>
+      </div>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
