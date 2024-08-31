@@ -1,0 +1,111 @@
+body {
+    height: 100vh;
+    background-color: #dcdcdc; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.galleryTitle {
+    font-size: 2.5rem; /* Tamaño del texto del título */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.gallerySlide {
+    max-width: 80%; 
+    border: 5px solid #000; 
+} 
+.gallerySlide img {
+    width: 100%; 
+    height: auto; 
+}
+.formContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.formContainer h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formContainer {
+    margin-bottom: 15px;
+}
+
+.formContainer label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.formContainer input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formContainer button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.juegoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    max-height: 250px;
+    width: 100%;
+}
+
+.juegoContainer .numero {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff;
+    margin: 0 10px;
+}
+
+.juegoContainer .numero input {
+    width: 150px;
+    text-align: center;
+    background: transparent;
+    font-size: 24px;
+    color:#000000;
+}
+.juegoContainer .adivinar{  
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  color: #333333;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+}
