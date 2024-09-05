@@ -4,6 +4,7 @@ import './index.css';
 import Galeria from './Galeria';
 import Formulario from './Formulario';
 import Juego from './Juego';
+import Botones from './Botones';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     <Galeria />
     <Formulario />
     <Juego />
+    <Botones />
   </React.StrictMode>
 );
 

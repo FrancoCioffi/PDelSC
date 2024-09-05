@@ -1,8 +1,9 @@
 body {
     height: 100vh;
-    background-color: #dcdcdc; 
+    background-color: #2d2d2d; 
 }
 
+/* GALERIA CSS */
 .container {
     display: flex;
     flex-direction: column; /* Organiza los elementos en columna */
@@ -13,7 +14,7 @@ body {
 
 .galleryTitle {
     font-size: 2.5rem; /* Tamaño del texto del título */
-    color: #333; /* Color del título */
+    color: #ccc; /* Color del título */
     margin-bottom: 20px; /* Espacio debajo del título */
 }
 
@@ -25,6 +26,9 @@ body {
     width: 100%; 
     height: auto; 
 }
+
+
+/* FORMULARIO CSS*/
 .formContainer {
     background-color: #fff;
     padding: 20px;
@@ -69,6 +73,8 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* JUEGO CSS*/
 .juegoContainer {
     display: flex;
     flex-direction: column;
@@ -109,3 +115,38 @@ body {
   line-height: 20px;
   padding: 10px 12px;
 }
+
+/* BOTONES CSS*/
+.video-contenedor {
+    display: block; /* Oculto inicialmente */
+    position: absolute; /* Posicionarlo sobre los botones */
+    top: -550px; /* Ajusta la posición según el diseño */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+
+.botones-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+button {
+    padding: 70px 100px;
+    font-size: 16px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #465347;
+    
+}
+
+

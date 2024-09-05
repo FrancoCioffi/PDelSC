@@ -1,23 +1,25 @@
+import React, {useState} from 'react'
 import './Style.css';
 
-function Juego() {
+function Juego() {  
+    const [compara, setCompara] = useState("");
     const numeroRandom = Math.floor(Math.random() * 100);
-    let compara = ""
+    console.log(numeroRandom)
+
     function comparaNumero(){
-        console.log(numeroRandom)
-        const intento = document.getElementById("numeroUsuario").value
-        if (numeroRandom != intento){
-            if (numeroRandom > intento){
-                compara = "Mas bajo";
-            }
-            else{
-                compara = "Mas alto";
+        const intento = document.getElementById("numeroUsuario").value;
+        console.log(numeroRandom);
+
+        if (+intento !== numeroRandom) {
+            if (numeroRandom > +intento) {
+                setCompara("Más alto");
+            } else {
+                setCompara("Más bajo");
             }
         }
         else{
-            compara = numeroRandom
+            setCompara('Le pegaste')
         }
-        return compara
     }
     return (
         <div className="container">
@@ -25,7 +27,7 @@ function Juego() {
             <h2>ADIVINAR EL NUMERO</h2>
             <h4 id="compara">El numero es: {compara}</h4>
                 <div className="numero">
-                    <input type="numberInput" id="numeroUsuario"></input>
+                    <input type="number" id="numeroUsuario"></input>
                 </div>
                 <button className='adivinar' onClick={comparaNumero}>Intentar</button>
             </div>
@@ -33,5 +35,4 @@ function Juego() {
 
     );
 }
-
 export default Juego;

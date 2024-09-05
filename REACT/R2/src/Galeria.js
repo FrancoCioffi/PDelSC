@@ -28,7 +28,7 @@ function Galeria() {
     <div className = "container">
       <h1 className="galleryTitle">Fase de Goku: {faseGoku[image]}</h1>
       <div className='gallerySlide'>
-          <img src={require('./img/'+image+'.jpeg')} />
+          <img src={require('./media/'+image+'.jpeg')} />
       </div>
     </div>
   );
