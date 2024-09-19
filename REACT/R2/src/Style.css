@@ -148,5 +148,21 @@ button:hover {
     background-color: #465347;
     
 }
+.guardadas {
+    margin-top: 20px;
+}
+
+.guardadas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.guardadas li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
 
 
