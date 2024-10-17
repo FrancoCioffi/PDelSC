@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import axios from 'axios';
 
-const AuthScreen = () => {
+const Autenticar = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
 
-  const handleRegister = () => {
+  const Register = () => {
     axios.post('http://localhost:5000/register', {
       username: username,
       email: email,
@@ -46,7 +46,7 @@ const AuthScreen = () => {
         secureTextEntry
         onChangeText={setPassword}
       />
-      <Button title="Registrar" onPress={handleRegister} />
+      <Button title="Registrar" onPress={Register} />
 
     </View>
   );
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AuthScreen;
+export default Autenticar;

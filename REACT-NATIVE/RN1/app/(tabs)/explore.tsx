@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import axios from 'axios';
 
-const AuthScreen = () => {
+const Autenticar = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const Login = () => {
     axios.post('http://localhost:5000/login', {
       email: email,
       password: password
@@ -37,7 +37,7 @@ const AuthScreen = () => {
         value={password}
         onChangeText={setPassword}
       />
-      <Button title="Iniciar sesión" onPress={handleLogin} />
+      <Button title="Iniciar sesión" onPress={Login} />
     </View>
   );
 };
@@ -64,4 +64,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AuthScreen;
+export default Autenticar;
