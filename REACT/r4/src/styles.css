@@ -1,0 +1,38 @@
+/* Header.css */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hero.css */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Skills.css */
+  .skill-bar {
+    margin-bottom: 20px;
+  }
+  
+  .bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  
