@@ -1,73 +1,57 @@
-/* Hero.css */
+/* hero.css */
 
 #hero {
-    display: flex;
-    justify-content: space-between; /* Espaciado entre los elementos */
-    align-items: center; /* Alinea verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
-    padding: 0 20px; /* Espacio horizontal */
-    background-color: #f4f4f4; /* Color de fondo */
-    color: #333; /* Color del texto */
+  background-color: #1c1c1cec;
+  color: #F5F5F5; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  text-align: center;
+  padding: 0 20px;
+}
+
+.heroContainer {
+  max-width: 800px; 
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  background-color: rgba(28, 28, 28, 0.85);
+}
+.name h1 {
+  font-size: 3rem; 
+  margin-bottom: 20px; 
+}
+
+.skills p {
+  font-size: 1.2rem; 
+  margin: 10px 0; 
+}
+
+.cta button {
+  background-color: #00A676; 
+  color: #F5F5F5; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.cta button:hover {
+  background-color: #00509E;
+}
+
+.fadeIn  {
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeIn 2s forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
   }
-  
-  .hero-content {
-    display: flex;
-    justify-content: space-between; /* Espaciado entre el nombre y habilidades */
-    width: 100%; /* Asegura que ocupa el 100% del ancho */
-  }
-  
-  .name {
-    flex: 1; /* Ocupa la parte izquierda */
-  }
-  
-  .skills {
-    flex: 1; /* Ocupa la parte derecha */
-    text-align: right; /* Alinea el texto a la derecha */
-  }
-  
-  h1 {
-    font-size: 3rem; /* Tamaño de fuente grande */
-    margin: 0;
-    animation: fadeIn 2s; /* Animación de entrada */
-  }
-  
-  p {
-    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    margin: 10px 0 0; /* Margen para separación */
-    animation: fadeIn 2s 0.5s; /* Animación de entrada con retraso */
-  }
-  
-  /* Animaciones */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Desplazamiento hacia arriba al entrar */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    }
-  
-    p {
-      font-size: 1.2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-    }
-  
-    #hero {
-      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-      align-items: center; /* Alinea al centro */
-      height: auto; /* Altura automática */
-    }
-  
-    .skills {
-      text-align: center; /* Centra el texto en la parte derecha */
-      margin-top: 20px; /* Espacio entre los dos elementos */
-    }
-  }
-  
+}

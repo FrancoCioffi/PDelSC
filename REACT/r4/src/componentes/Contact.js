@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './styles/contact.css';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -9,13 +11,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica para enviar el formulario
     console.log('Datos enviados:', formData);
   };
 
   return (
     <section id="contact">
-      <h2>Contacto</h2>
+      <h2 className='contactH2'>Contacto</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -42,6 +43,20 @@ const Contact = () => {
         />
         <button type="submit">Enviar</button>
       </form>
+      <div className="socials">
+        <h3>Sígueme en</h3>
+        <div className="socialIcons">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/FrancoCioffi" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

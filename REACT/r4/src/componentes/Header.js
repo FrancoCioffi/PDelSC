@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './styles/header.css'
+import './styles/header.css';
 
+// Sticky del header.
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
 
@@ -14,10 +15,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={isSticky ? 'sticky' : ''}>
+    <header className={`header ${isSticky ? 'sticky' : ''}`}>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
