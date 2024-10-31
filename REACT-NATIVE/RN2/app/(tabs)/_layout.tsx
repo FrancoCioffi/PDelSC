@@ -15,7 +15,7 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="register"
+        name="index"
         options={{
           title: 'Register',
           tabBarIcon: ({ color, focused }) => (
